@@ -1,10 +1,9 @@
-
-FROM fedora23_utd
+FROM fedora:23
 
 MAINTAINER stagiaire
 
-# os update is already in fedora23_utd image
-#RUN dnf update -y && dnf clean all
+# os update
+RUN dnf update -y && dnf clean all
 
 # python3 is already installed
 # install pip
