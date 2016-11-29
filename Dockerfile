@@ -30,6 +30,6 @@ RUN git clone https://github.com/astondevops/web_server_flask
 EXPOSE 5000
 
 WORKDIR /home/dev/web_server_flask
-ENTRYPOINT ["python3", "hello.py", "runserver"]
+#ENTRYPOINT ["python3", "hello.py", "runserver"]
 # starting web server on a public ip
-#ENTRYPOINT ["python3", "hello.py", "runserver", "-h=0.0.0.0"]
+ENTRYPOINT ["python3", "hello.py", "runserver", "-h=0.0.0.0"]
